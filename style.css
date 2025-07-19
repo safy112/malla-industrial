@@ -24,7 +24,7 @@ h1 {
   margin: 4px;
   border: 1px solid #666;
   border-radius: 6px;
-  background: #e8e8e8; /* ← este es el fondo actual de los ramos disponibles */
+  background: #9debe7; /* ← este es el fondo actual de los ramos disponibles */
   cursor: pointer;
   transition: 0.2s;
 }

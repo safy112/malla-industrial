@@ -149,7 +149,7 @@
     "Formulación y evaluación de proyectos":["Economía circular y sostenible", "Ingeniería económica"],
     "Simulación de procesos y sistemas":["Procesos industriales", "Modelamiento"],
     "Desarrollo organizacional":["Gestión de talentos en las organizaciones", "Análisis y estrategia de negocios"],
-    "Gestión energética":["Economía circular y sostenible"] 
+    "Gestión energética":["Economía circular y sostenible"], 
     "Estrategia de marketing":["Gestión de la innovación y emprendimiento"],
     "Gestión de riesgos":["Economía circular y sostenible", " Análisis y estrategia de negocios"],
     "Gestión de la cadena de suministro":["Investigación de operaciones", "Gestión de operaciones II"]
@@ -196,6 +196,7 @@
       "Proyect management",
       "Electivo profesional I",
       "Finanzas",
-      "Taller de comunicación efectiva"]
+      "Taller de comunicación efectiva"
+    ]
   }
 }

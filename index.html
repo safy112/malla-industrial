@@ -1,92 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Malla Interactiva</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-      background: #f4f4f4;
-    }
-
-    .semestre {
-      border: 2px solid #ccc;
-      padding: 10px;
-      margin-bottom: 20px;
-      background: #fff;
-    }
-
-    .semestre h3 {
-      margin-top: 0;
-    }
-
-    .ramo {
-      display: inline-block;
-      padding: 10px;
-      margin: 5px;
-      border: 1px solid #888;
-      border-radius: 8px;
-      background-color: #eee;
-      cursor: pointer;
-    }
-
-    .ramo.aprobado {
-      background-color: #d9b3ff;
-      text-decoration: line-through;
-    }
-
-    .ramo.reprobado {
-      background-color: #ffc2d1;
-    }
-
-    .ramo.bloqueado {
-      background-color: #ccc;
-      color: #666;
-      cursor: not-allowed;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Malla Interactiva Industrial</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <h1>Malla Interactiva</h1>
-
-  <div class="semestre" id="sem1">
-    <h3>Semestre 1</h3>
-    <div class="ramo" data-id="mat101">Matemáticas I</div>
-    <div class="ramo" data-id="fis101">Física I</div>
-  </div>
-
-  <div class="semestre" id="sem2">
-    <h3>Semestre 2</h3>
-    <div class="ramo bloqueado" data-id="mat102" data-prereq="mat101">Matemáticas II</div>
-    <div class="ramo bloqueado" data-id="fis102" data-prereq="fis101">Física II</div>
-  </div>
-
-  <script>
-    document.querySelectorAll('.ramo').forEach(ramo => {
-      ramo.addEventListener('click', () => {
-        if (ramo.classList.contains('bloqueado')) return;
-
-        if (!ramo.classList.contains('aprobado')) {
-          ramo.classList.toggle('reprobado');
-          ramo.classList.toggle('aprobado');
-        } else {
-          ramo.classList.remove('aprobado');
-          ramo.classList.remove('reprobado');
-        }
-
-        // Verifica prerrequisitos
-        document.querySelectorAll('.ramo.bloqueado').forEach(r => {
-          const prereqId = r.dataset.prereq;
-          const prereqRamo = document.querySelector(`.ramo[data-id="${prereqId}"]`);
-          if (prereqRamo && prereqRamo.classList.contains('aprobado')) {
-            r.classList.remove('bloqueado');
-          }
-        });
-      });
-    });
-  </script>
-
+  <h1>Malla Interactiva - Ingeniería Industrial</h1>
+  <div id="contenedor-malla"></div>
+  <script src="script.js"></script>
 </body>
 </html>

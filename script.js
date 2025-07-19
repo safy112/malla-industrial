@@ -1,62 +1,47 @@
-const data = {
-  semestres: /* los datos se insertan aquí */,
-  prerrequisitos: /* los datos se insertan aquí */
-};
-
-// Para mantener el HTML limpio, insertamos JSON por separado:
-fetch("data.json")
+fetch('data.json')
   .then(res => res.json())
-  .then(data => {
-    const { semestres, prerrequisitos } = data;
-    const contenedor = document.getElementById("contenedor-malla");
+  .then(({ semestres, prerrequisitos }) => {
+    const cont = document.getElementById('contenedor-malla');
+    const estado = {}; // ramos aprobados
 
-    const estadoRamos = {};
+    function crearRamo(name) {
+      const div = document.createElement('div');
+      div.className = 'ramo';
+      div.textContent = name;
+      div.dataset.name = name;
+      if (prerrequisitos[name]) div.classList.add('bloqueado');
 
-    function crearRamo(nombre) {
-      const div = document.createElement("div");
-      div.classList.add("ramo");
-      div.textContent = nombre;
-      div.dataset.nombre = nombre;
+      div.addEventListener('click', () => {
+        if (div.classList.contains('bloqueado')) return;
 
-      if (prerrequisitos[nombre]) {
-        div.classList.add("bloqueado");
-      }
-
-      div.addEventListener("click", () => {
-        if (div.classList.contains("bloqueado")) return;
-
-        div.classList.toggle("aprobado");
-        div.classList.toggle("reprobado");
-
-        estadoRamos[nombre] = div.classList.contains("aprobado");
-        desbloquearRamos();
+        if (!div.classList.contains('aprobado')) {
+          div.classList.add('aprobado');
+          div.classList.remove('reprobado');
+        } else {
+          div.classList.remove('aprobado');
+        }
+        estado[name] = div.classList.contains('aprobado');
+        desbloquear();
       });
-
       return div;
     }
 
-    function desbloquearRamos() {
-      document.querySelectorAll(".ramo.bloqueado").forEach(ramo => {
-        const nombre = ramo.dataset.nombre;
-        const prereqs = prerrequisitos[nombre];
-
-        if (prereqs && prereqs.every(pr => estadoRamos[pr])) {
-          ramo.classList.remove("bloqueado");
-        }
+    function desbloquear() {
+      document.querySelectorAll('.ramo.bloqueado').forEach(el => {
+        const name = el.dataset.name;
+        const reqs = prerrequisitos[name];
+        if (reqs.every(r => estado[r])) el.classList.remove('bloqueado');
       });
     }
 
-    for (const [semestre, ramos] of Object.entries(semestres)) {
-      const semDiv = document.createElement("div");
-      semDiv.classList.add("semestre");
-      const title = document.createElement("h3");
-      title.textContent = semestre;
-      semDiv.appendChild(title);
-
-      ramos.forEach(nombre => {
-        semDiv.appendChild(crearRamo(nombre));
-      });
-
-      contenedor.appendChild(semDiv);
-    }
-  });
+    Object.entries(semestres).forEach(([sem, ramos]) => {
+      const sdiv = document.createElement('div');
+      sdiv.className = 'semestre';
+      const h2 = document.createElement('h2');
+      h2.textContent = sem;
+      sdiv.appendChild(h2);
+      ramos.forEach(r => sdiv.appendChild(crearRamo(r)));
+      cont.appendChild(sdiv);
+    });
+  })
+  .catch(err => console.error('Error cargando data.json:', err));

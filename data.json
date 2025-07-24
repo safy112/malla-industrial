@@ -1,202 +1,329 @@
 {
-  "semestres": {
-    "Semestre 1": [
-      "Fundamentos de matemática",
-      "Desarrollo personal",
-      "Desafíos de la ingeniería",
-      "Fundamentos de física",
-      "Fundamentos de programación"
-    ],
-    "Semestre 2": [
-      "Programación",
-      "Álgebra",
-      "Cálculo diferencial",
-      "Química para la ingeniería",
-      "Ingeniería e innovación y emprendimiento"
-    ],
-    "Semestre 3": [
-      "Cálculo integral y series",
-      "Álgebra lineal",
-      "Física mecánica",
-      "Tópicos de formación",
-      "Alfabetización I",
-      "TIPE sello UV I",
-      "Idioma I"
-    ],
-    "Semestre 4": [
-      "Cálculo en varias variables",
-      "Ecuaciones diferenciales ordinarias",
-      "Física calor y ondas",
-      "Administración de empresas",
-      "TIPE sello UV II",
-      "Idioma II"
-    ],
-    "Semestre 5": [
-      "Física electromagnetismo",
-      "Estadísticas y probabilidades",
-      "Análisis financiero y contable",
-      "Termodinámica",
-      "Análisis de materiales y diseño de producto",
-      "Principios de data science",
-      "Idioma III",
-      "Práctica básica"
-    ],
-    "Semestre 6": [
-      "Inferencia estadística",
-      "Gestión presupuestaria y costos",
-      "Pensamiento sistémico",
-      "Alfabetización II",
-      "Microeconomía y macroeconomía",
-      "Idioma IV"
-    ],
-    "Semestre 7": [
-      "Procesos industriales",
-      "Gestión de talentos en las organizaciones",
-      "Modelamiento",
-      "Sistema de información y administración",
-      "Economía circular y sostenible",
-      "Gestión de la innovación y emprendimiento"
-    ],
-    "Semestre 8": [
-      "Gestión de operaciones I",
-      "Análisis y estrategia de negocios",
-      "Visualización de datos",
-      "Ingeniería económica",
-      "Proyecto de licenciatura",
-      "Investigación de operaciones"
-    ],
-    "Semestre 9": [
-      "Gestión de operaciones II",
-      "Dirección estratégica",
-      "Formulación y evaluación de proyectos",
-      "Simulación de procesos y sistemas",
-      "Desarrollo organizacional",
-      "Gestión energética"
-    ],
-    "Semestre 10": [
-      "Estrategia de marketing",
-      "Gestión de riesgos",
-      "Gestión de la cadena de suministro",
-      "Proyect management",
-      "Electivo profesional I",
-      "Finanzas",
-      "Taller de comunicación efectiva"
-    ],
-    "Semestre 11": [
-      "Proyecto de título",
-      "Electivo profesional II",
-      "Práctica profesional"
-    ]
-  },
-  "prerrequisitos": {
-    "Cálculo diferencial": ["Fundamentos de matemática"],
-    "Álgebra": ["Fundamentos de matemática"],
-    "Programación": ["Fundamentos de programación"],
-    "Cálculo integral y series": ["Cálculo diferencial"],
-    "Álgebra lineal": ["Álgebra"],
-    "Física mecánica": ["Fundamentos de física", "Cálculo diferencial"],
-    "Tópicos de formación": ["Desarrollo personal", "Ingeniería e innovación y emprendimiento"],
-    "Alfabetización I": ["Desarrollo personal"],
-    "TIPE sello UV I": ["Ingeniería e innovación y emprendimiento"],
-    "Cálculo en varias variables": ["Cálculo integral y series", "Álgebra lineal"],
-    "Ecuaciones diferenciales ordinarias": ["Cálculo integral y series", "Álgebra lineal"],
-    "Física calor y ondas": ["Cálculo integral y series", "Física mecánica"],
-    "Administración de empresas": ["Tópicos de formación", "Alfabetización I"],
-    "TIPE sello UV II": ["TIPE sello UV I"],
-    "Idioma II": ["Idioma I"],
-    "Física electromagnetismo": ["Cálculo integral y series", "Física mecánica"],
-    "Estadísticas y probabilidades": ["Programación", "Cálculo en varias variables"],
-    "Análisis financiero y contable": ["Álgebra", "Administración de empresas"],
-    "Termodinámica": ["Química para la ingeniería", "Física calor y ondas"],
-    "Análisis de materiales y diseño de producto": ["Química para la ingeniería", "Ingeniería e innovación y emprendimiento"],
-    "Principios de data science": ["Programación", "Álgebra lineal"],
-    "Idioma III": ["Idioma II"],
-    "Práctica básica": [
-      "Cálculo en varias variables",
-      "Ecuaciones diferenciales ordinarias",
-      "Física calor y ondas",
-      "Administración de empresas",
-      "TIPE sello UV II",
-      "Idioma II"
-    ],
-    "Inferencia estadística": ["Estadísticas y probabilidades"],
-    "Gestión presupuestaria y costos": ["Análisis financiero y contable"],
-    "Pensamiento sistémico": ["Administración de empresas", "Principios de data science"],
-    "Alfabetización II": ["Alfabetización I"],
-    "Microeconomía y macroeconomía": ["Cálculo integral y series", "Administración de empresas"],
-    "Idioma IV": ["Idioma III"],
-    "Procesos industriales": ["Termodinámica"],
-    "Gestión de talentos en las organizaciones": ["Administración de empresas", "Pensamiento sistémico"],
-    "Modelamiento": ["Álgebra lineal", "Inferencia estadística"],
-    "Sistema de información y administración": ["Principios de data science", "Pensamiento sistémico"],
-    "Economía circular y sostenible": ["Análisis de materiales y diseño de producto", "Microeconomía y macroeconomía"],
-    "Gestión de la innovación y emprendimiento": ["Tópicos de formación", "Análisis de materiales y diseño de producto"],
-    "Gestión de operaciones I": ["Modelamiento"],
-    "Análisis y estrategia de negocios": ["Gestión presupuestaria y costos", "Microeconomía y macroeconomía"],
-    "Visualización de datos": ["Sistema de información y administración"],
-    "Ingeniería económica": ["Gestión presupuestaria y costos", "Microeconomía y macroeconomía"],
-    "Proyecto de licenciatura": [
-      "Procesos industriales",
-      "Gestión de talentos en las organizaciones",
-      "Modelamiento",
-      "Sistema de información y administración",
-      "Economía circular y sostenible",
-      "Gestión de la innovación y emprendimiento"
-    ],
-    "Investigación de operaciones": ["Modelamiento"],
-    "Gestión de operaciones II": ["Gestión de operaciones I"],
-    "Dirección estratégica": ["Análisis y estrategia de negocios"],
-    "Formulación y evaluación de proyectos": ["Economía circular y sostenible", "Ingeniería económica"],
-    "Simulación de procesos y sistemas": ["Procesos industriales", "Modelamiento"],
-    "Desarrollo organizacional": ["Gestión de talentos en las organizaciones", "Análisis y estrategia de negocios"],
-    "Gestión energética": ["Economía circular y sostenible"],
-    "Estrategia de marketing": ["Gestión de la innovación y emprendimiento"],
-    "Gestión de riesgos": ["Economía circular y sostenible", "Análisis y estrategia de negocios"],
-    "Gestión de la cadena de suministro": ["Investigación de operaciones", "Gestión de operaciones II"],
-    "Proyect management": ["Dirección estratégica", "Formulación y evaluación de proyectos"],
-    "Electivo profesional I": [
-      "Gestión de operaciones I",
-      "Análisis y estrategia de negocios",
-      "Visualización de datos",
-      "Ingeniería económica",
-      "Proyecto de licenciatura",
-      "Estrategia de marketing"
-    ],
-    "Finanzas": ["Ingeniería económica"],
-    "Taller de comunicación efectiva": [
-      "Gestión de operaciones I",
-      "Análisis y estrategia de negocios",
-      "Visualización de datos",
-      "Ingeniería económica",
-      "Proyecto de licenciatura",
-      "Estrategia de marketing"
-    ],
-    "Proyecto de título": [
-      "Gestión energética",
-      "Gestión de riesgos",
-      "Gestión de la cadena de suministro",
-      "Proyect management",
-      "Electivo profesional I",
-      "Finanzas",
-      "Taller de comunicación efectiva"
-    ],
-    "Electivo profesional II": [
-      "Gestión de operaciones I",
-      "Análisis y estrategia de negocios",
-      "Visualización de datos",
-      "Ingeniería económica",
-      "Proyecto de licenciatura",
-      "Estrategia de marketing"
-    ],
-    "Práctica profesional": [
-      "Práctica básica",
-      "Gestión energética",
-      "Gestión de riesgos",
-      "Gestión de la cadena de suministro",
-      "Proyect management",
-      "Electivo profesional I",
-      "Finanzas",
-      "Taller de comunicación efectiva"
-    ]
-  }
+    "semestres": {
+        "Semestre 1": [
+            "Fundamentos de matemática",
+            "Desarrollo personal",
+            "Desafíos de la ingeniería",
+            "Fundamentos de física",
+            "Fundamentos de programación"
+        ],
+        "Semestre 2": [
+            "Programación",
+            "Álgebra",
+            "Cálculo diferencial",
+            "Química para la ingeniería",
+            "Ingeniería e innovación y emprendimiento"
+        ],
+        "Semestre 3": [
+            "Cálculo integral y series",
+            "Álgebra lineal",
+            "Física mecánica",
+            "Tópicos de formación",
+            "Alfabetización I",
+            "TIPE sello UV I",
+            "Idioma I"
+        ],
+        "Semestre 4": [
+            "Cálculo en varias variables",
+            "Ecuaciones diferenciales ordinarias",
+            "Física calor y ondas",
+            "Administración de empresas",
+            "TIPE sello UV II",
+            "Idioma II"
+        ],
+        "Semestre 5": [
+            "Física electromagnetismo",
+            "Estadísticas y probabilidades",
+            "Análisis financiero y contable",
+            "Termodinámica",
+            "Análisis de materiales y diseño de producto",
+            "Principios de data science",
+            "Idioma III",
+            "Práctica básica"
+        ],
+        "Semestre 6": [
+            "Inferencia estadística",
+            "Gestión presupuestaria y costos",
+            "Pensamiento sistémico",
+            "Alfabetización II",
+            "Microeconomía y macroeconomía",
+            "Idioma IV"
+        ],
+        "Semestre 7": [
+            "Procesos industriales",
+            "Gestión de talentos en las organizaciones",
+            "Modelamiento",
+            "Sistema de información y administración",
+            "Economía circular y sostenible",
+            "Gestión de la innovación y emprendimiento"
+        ],
+        "Semestre 8": [
+            "Gestión de operaciones I",
+            "Análisis y estrategia de negocios",
+            "Visualización de datos",
+            "Ingeniería económica",
+            "Proyecto de licenciatura",
+            "Investigación de operaciones"
+        ],
+        "Semestre 9": [
+            "Gestión de operaciones II",
+            "Dirección estratégica",
+            "Formulación y evaluación de proyectos",
+            "Simulación de procesos y sistemas",
+            "Desarrollo organizacional",
+            "Gestión energética"
+        ],
+        "Semestre 10": [
+            "Estrategia de marketing",
+            "Gestión de riesgos",
+            "Gestión de la cadena de suministro",
+            "Proyect management",
+            "Electivo profesional I",
+            "Finanzas",
+            "Taller de comunicación efectiva"
+        ],
+        "Semestre 11": [
+            "Proyecto de título",
+            "Electivo profesional II",
+            "Práctica profesional"
+        ]
+    },
+    "prerrequisitos": {
+        "Cálculo diferencial": [
+            "Fundamentos de matemática"
+        ],
+        "Álgebra": [
+            "Fundamentos de matemática"
+        ],
+        "Programación": [
+            "Fundamentos de programación"
+        ],
+        "Cálculo integral y series": [
+            "Cálculo diferencial"
+        ],
+        "Álgebra lineal": [
+            "Álgebra"
+        ],
+        "Física mecánica": [
+            "Fundamentos de física",
+            "Cálculo diferencial"
+        ],
+        "Tópicos de formación": [
+            "Desarrollo personal",
+            "Ingeniería e innovación y emprendimiento"
+        ],
+        "Alfabetización I": [
+            "Desarrollo personal"
+        ],
+        "TIPE sello UV I": [
+            "Ingeniería e innovación y emprendimiento"
+        ],
+        "Cálculo en varias variables": [
+            "Cálculo integral y series",
+            "Álgebra lineal"
+        ],
+        "Ecuaciones diferenciales ordinarias": [
+            "Cálculo integral y series",
+            "Álgebra lineal"
+        ],
+        "Física calor y ondas": [
+            "Cálculo integral y series",
+            "Física mecánica"
+        ],
+        "Administración de empresas": [
+            "Tópicos de formación",
+            "Alfabetización I"
+        ],
+        "TIPE sello UV II": [
+            "TIPE sello UV I"
+        ],
+        "Idioma II": [
+            "Idioma I"
+        ],
+        "Física electromagnetismo": [
+            "Cálculo integral y series",
+            "Física mecánica"
+        ],
+        "Estadísticas y probabilidades": [
+            "Programación",
+            "Cálculo en varias variables"
+        ],
+        "Análisis financiero y contable": [
+            "Álgebra",
+            "Administración de empresas"
+        ],
+        "Termodinámica": [
+            "Química para la ingeniería",
+            "Física calor y ondas"
+        ],
+        "Análisis de materiales y diseño de producto": [
+            "Química para la ingeniería",
+            "Ingeniería e innovación y emprendimiento"
+        ],
+        "Principios de data science": [
+            "Programación",
+            "Álgebra lineal"
+        ],
+        "Idioma III": [
+            "Idioma II"
+        ],
+        "Práctica básica": [
+            "Cálculo en varias variables",
+            "Ecuaciones diferenciales ordinarias",
+            "Física calor y ondas",
+            "Administración de empresas",
+            "TIPE sello UV II",
+            "Idioma II"
+        ],
+        "Inferencia estadística": [
+            "Estadísticas y probabilidades"
+        ],
+        "Gestión presupuestaria y costos": [
+            "Análisis financiero y contable"
+        ],
+        "Pensamiento sistémico": [
+            "Administración de empresas",
+            "Principios de data science"
+        ],
+        "Alfabetización II": [
+            "Alfabetización I"
+        ],
+        "Microeconomía y macroeconomía": [
+            "Cálculo integral y series",
+            "Administración de empresas"
+        ],
+        "Idioma IV": [
+            "Idioma III"
+        ],
+        "Procesos industriales": [
+            "Termodinámica"
+        ],
+        "Gestión de talentos en las organizaciones": [
+            "Administración de empresas",
+            "Pensamiento sistémico"
+        ],
+        "Modelamiento": [
+            "Álgebra lineal",
+            "Inferencia estadística"
+        ],
+        "Sistema de información y administración": [
+            "Principios de data science",
+            "Pensamiento sistémico"
+        ],
+        "Economía circular y sostenible": [
+            "Análisis de materiales y diseño de producto",
+            "Microeconomía y macroeconomía"
+        ],
+        "Gestión de la innovación y emprendimiento": [
+            "Tópicos de formación",
+            "Análisis de materiales y diseño de producto"
+        ],
+        "Gestión de operaciones I": [
+            "Modelamiento"
+        ],
+        "Análisis y estrategia de negocios": [
+            "Gestión presupuestaria y costos",
+            "Microeconomía y macroeconomía"
+        ],
+        "Visualización de datos": [
+            "Sistema de información y administración"
+        ],
+        "Ingeniería económica": [
+            "Gestión presupuestaria y costos",
+            "Microeconomía y macroeconomía"
+        ],
+        "Proyecto de licenciatura": [
+            "Procesos industriales",
+            "Gestión de talentos en las organizaciones",
+            "Modelamiento",
+            "Sistema de información y administración",
+            "Economía circular y sostenible",
+            "Gestión de la innovación y emprendimiento"
+        ],
+        "Investigación de operaciones": [
+            "Modelamiento"
+        ],
+        "Gestión de operaciones II": [
+            "Gestión de operaciones I"
+        ],
+        "Dirección estratégica": [
+            "Análisis y estrategia de negocios"
+        ],
+        "Formulación y evaluación de proyectos": [
+            "Economía circular y sostenible",
+            "Ingeniería económica"
+        ],
+        "Simulación de procesos y sistemas": [
+            "Procesos industriales",
+            "Modelamiento"
+        ],
+        "Desarrollo organizacional": [
+            "Gestión de talentos en las organizaciones",
+            "Análisis y estrategia de negocios"
+        ],
+        "Gestión energética": [
+            "Economía circular y sostenible"
+        ],
+        "Estrategia de marketing": [
+            "Gestión de la innovación y emprendimiento"
+        ],
+        "Gestión de riesgos": [
+            "Economía circular y sostenible",
+            "Análisis y estrategia de negocios"
+        ],
+        "Gestión de la cadena de suministro": [
+            "Investigación de operaciones",
+            "Gestión de operaciones II"
+        ],
+        "Proyect management": [
+            "Dirección estratégica",
+            "Formulación y evaluación de proyectos"
+        ],
+        "Electivo profesional I": [
+            "Gestión de operaciones I",
+            "Análisis y estrategia de negocios",
+            "Visualización de datos",
+            "Ingeniería económica",
+            "Proyecto de licenciatura",
+            "Estrategia de marketing"
+        ],
+        "Finanzas": [
+            "Ingeniería económica"
+        ],
+        "Taller de comunicación efectiva": [
+            "Gestión de operaciones I",
+            "Análisis y estrategia de negocios",
+            "Visualización de datos",
+            "Ingeniería económica",
+            "Proyecto de licenciatura",
+            "Estrategia de marketing"
+        ],
+        "Proyecto de título": [
+            "Gestión energética",
+            "Gestión de riesgos",
+            "Gestión de la cadena de suministro",
+            "Proyect management",
+            "Electivo profesional I",
+            "Finanzas",
+            "Taller de comunicación efectiva"
+        ],
+        "Electivo profesional II": [
+            "Gestión de operaciones I",
+            "Análisis y estrategia de negocios",
+            "Visualización de datos",
+            "Ingeniería económica",
+            "Proyecto de licenciatura",
+            "Estrategia de marketing"
+        ],
+        "Práctica profesional": [
+            "Práctica básica",
+            "Gestión energética",
+            "Gestión de riesgos",
+            "Gestión de la cadena de suministro",
+            "Proyect management",
+            "Electivo profesional I",
+            "Finanzas",
+            "Taller de comunicación efectiva"
+        ]
+    }
 }
